@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Aksesoris Motor "QSHOP290"</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="boxnav">
+      <nav id="nav">
+        <label>QSHOP290</label>
+        <ul>
+          <li><a href="../html/index.html">Beranda</a></li>
+          <li>
+            <a>Produk</a>
+            <ul class="dropdown">
+              <li><a href="../html/terbaru.html">Terbaru</a></li>
+              <li><a href="../html/terlaris.html">Terlaris</a></li>
+            </ul>
+          </li>
+          <li>
+            <a>Hubungi Kami</a>
+            <ul class="dropdown">
+              <li>
+                <a
+                  href="https://web.whatsapp.com/send?phone=6289503392255&text=Hallo&absent=0"
+                  target="_blank"
+                  >WhatsApp</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://shopee.co.id/qshop290"
+                  target="_blank"
+                  >Shopee</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://s.lazada.co.id/s.hW29B"
+                  target="_blank"
+                  >Lazada</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="#about">Tentang</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- banner -->
+    <div class="banner">
+      <div class="welcome">
+        <h1>Aksesoris Motor "QSHOP290"</h1>
+        <div class="kelebihan">
+          <h3>- Berkualitas</h3>
+          <h3>- Harga Terjangkau</h3>
+          <h3>- Halal</h3>
+          <h3>- Terpercaya</h3>
+        </div>
+      </div>
+      <a href="#boxslide"><h2>Di Liat-liat Bos!</h2></a>
+    </div>
+
+    <!-- tombolup -->
+    <a href="#nav"
+      ><img class="tombolup" src="../image/up1.png" alt="up"
+    /></a>
+
+    <!-- about -->
+    <div id="about">
+      <div class="kami">
+        <h1>Tentang Toko</h1>
+        <p>
+          Assalamualaikum Warohmatulohi Wabarokatu
+!!! SELAMAT DATANG DI Qshop290 !!!!! 
+Qshop290 nyediain barang apa aja sih? Banyak bos,toko kami menyediakan berbagai macam part aksesoris motor Dll,
+Tinggal klik beli aja pembelian sebelum jam 6 sore pasti kami kirim hari ini juga,tidak usah ragu untuk klik beli
+mau nanya dulu?boleh dong pastinya kami usahakan balas cepat,mau datang langsung ke toko?boleh juga
+datang aja bisa di pick up sendiri hehe,Dropship dan Resseller Terbuka bebas ditoko kami silahkan.
+        </p>
+      </div>
+    </div>
+
+    <!-- slideimage -->
+    <div id="boxslide">
+      <div class="slideimage">
+        <h1 class="slidehead">Preview</h1>
+
+        <div class="slide">
+          <img class="mySlides" src="../image/preview.jpeg" />
+          <img class="mySlides" src="../image/preview2.jpeg" />
+          <img class="mySlides" src="../image/preview3.jpeg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- keunggulan -->
+    <div class="box">
+      <h1 class="headunggul">Manfaat Membeli di Toko "QSHOP290"</h1>
+      <div class="keunggulan">
+        <div class="cardunggul">
+          <img src="../image/1.jpg" alt="berkualitas" />
+          <h3>Berkualitas</h3>
+          <p>
+            Produk yang dijual oleh toko ini memiliki kualitas yang cukup
+            tinggi semuanya terbuat dari barang-barang ori sehingga terpakai lama.
+          </p>
+        </div>
+        <div class="cardunggul">
+          <img src="../image/2.png" alt="harga terjangkau" />
+          <h3>Harga Terjangkau</h3>
+          <p>Harga produk yang dijual oleh toko ini sangat terjangkau.</p>
+        </div>
+        <div class="cardunggul">
+          <img src="../image/3.png" alt="higienis" />
+          <h3>Halal</h3>
+          <p>
+            Produk yang dijual oleh toko ini dijamin 100% halal.
+          </p>
+        </div>
+        <div class="cardunggul">
+          <img src="../image/4.png" alt="Terpercaya" />
+          <h3>Terpercaya</h3>
+          <p>
+            Sudah banyak respon positif dari para konsumen pada produk yang
+            dijual oleh toko ini.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <h3>Copyright By Ulul Albab</h3>
+    </footer>
+
+    <!-- script slideimage -->
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>

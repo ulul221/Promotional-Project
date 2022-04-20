@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body{
+  background-color: rgb(175, 167, 167);
+}
+/* navbar */
+nav {
+  height: 70px;
+  width: 70vw;
+  background-color: rgba(0, 0, 0, 0.884);
+  border-radius: 0 0 10px 10px;
+  font-size: 18px;
+  position: absolute;
+  transform: translateX(20%);
+  z-index: 1;
+}
+
+nav label {
+  position: absolute;
+  margin: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+  font-family: "Dancing Script", cursive;
+}
+
+nav ul {
+  float: right;
+  padding: 3px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px;
+  color: rgb(247, 239, 239);
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.788);
+  color: rgb(0, 0, 0);
+}
+
+nav ul li .dropdown {
+  display: none;
+}
+
+nav ul li:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.842);
+}
+
+/* banner */
+.banner {
+  background: url(../image/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 110vh;
+}
+
+.banner .welcome {
+  font-size: 25px;
+  width: 30%;
+  transform: translate(40%, 45%);
+  background-color: rgba(0, 0, 0, 0.699);
+  padding: 30px;
+  border-radius: 30px;
+  border: 5px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.banner .welcome .kelebihan {
+  margin-top: 20px;
+}
+
+.banner h2 {
+  font-size: 30px;
+  transform: translate(20vw, 30vh);
+  width: 20vw;
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.699);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.banner h2:hover {
+  background-color: rgba(255, 255, 255, 0.781);
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 10px 0;
+  transition: 0.5s;
+}
+
+/* tombolup */
+.tombolup {
+  position: sticky;
+  width: 5%;
+  top: 88vh;
+}
+
+/* about */
+#about {
+  display: flex;
+  height: 40vh;
+  width: 80vw;
+  margin: auto;
+  border-radius: 30px;
+  background-color: rgba(7, 7, 7, 0.87);
+  margin-top: 20px;
+  color: white;
+}
+
+#about .kami {
+  width: 60vw;
+  margin: auto;
+  font-size: 20px;
+}
+
+#about .kami p {
+  margin-top: 20px;
+}
+
+/* slideimage */
+#boxslide {
+  padding-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+}
+
+#boxslide .slideimage .slidehead {
+  text-align: center;
+  font-size: 40px;
+}
+
+#boxslide .slide {
+  box-shadow: 0 0 30px 0;
+}
+
+#boxslide .slide .mySlides {
+  margin-top: 30px;
+  width: 65vw;
+  height: 70vh;
+}
+
+/* keunggulan */
+.box {
+  width: 90vw;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-radius: 50px 50px 0 0;
+  margin: auto;
+  color: rgb(2, 2, 2);
+  background-color: rgb(255, 255, 255);
+}
+
+.headunggul {
+  text-align: center;
+  font-size: 40px;
+  margin: 40px;
+}
+
+.keunggulan {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.keunggulan .cardunggul {
+  width: 40vh;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.keunggulan .cardunggul img {
+  width: 50%;
+}
+
+/* footer */
+footer {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-color: rgba(7, 7, 7, 0.87);
+  color: rgb(255, 255, 255);
+}
+
+footer h3 {
+  border-top: 1px solid;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 400px) {
+  /* navbar */
+  .boxnav{
+    display: flex;
+    justify-content: center;
+  }
+  nav {
+    height: 120px;
+    width: 80vw;
+    transform: translateX(0);
+    border-radius: 0;
+  }
+
+  nav label {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 20vw;
+  }
+
+  nav ul {
+    margin-top: 80px;
+    margin-right: 5px;
+  }
+
+  nav ul li a {
+    padding: 5px;
+    font-size: 13px;
+  }
+
+  nav ul li:hover .dropdown {
+    margin: 0;
+  }
+
+  /* banner */
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner .welcome {
+    font-size: 12px;
+    width: 50vw;
+    transform: translate(0);
+    margin-top: 100px;
+  }
+
+  .banner h2 {
+    font-size: 15px;
+    width: 40vw;
+    transform: translate(0);
+    margin-top: 50px;
+  }
+
+  /* about */
+  #about{
+    height: 250px;
+  }
+
+  #about .kami {
+    width: 60vw;
+    margin: auto;
+    font-size: 12px;
+  }
+
+  #boxslide .slideimage .slidehead {
+    font-size: 33px;
+  }
+
+  #boxslide .slide .mySlides {
+    margin-top: 45px;
+    width: 80vw;
+    height: 200px;
+  }
+
+  /* tombolup */
+  .tombolup {
+    width: 15%;
+    margin-left: 1vw;
+  }
+
+  /* keunggulan */
+  .box{
+    margin-top: -38vh;
+  }
+
+  .headunggul{
+    font-size: 24px;
+  }
+
+  .keunggulan {
+    flex-direction: column;
+    width: 265px;
+    margin: auto;
+  }
+
+  .keunggulan .cardunggul {
+    margin-bottom: 50px;
+  }
+  
+  .keunggulan .cardunggul img {
+    width: 70%;
+  }
+}
